@@ -13,7 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
 Route::get('/home', function () {
-    return view('mainapps');
+    return view('pengunjung.index');
 });
