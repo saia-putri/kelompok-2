@@ -31,6 +31,6 @@
             Continue reading
             <svg class="bi"><use xlink:href="#chevron-right"/></svg>
           </a>
-        </div>
- </section>
+</div>
+</section>
 @endsection
