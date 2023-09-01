@@ -1,0 +1,38 @@
+:root{
+    --warna-bg-primary: #3f6277;
+    --warna-text-primary: #ffffff;
+    --color-text-primary: #000000;
+    --warna-bg: rgb(255, 255, 255);
+    --font: 'Poppins', sans-serif;
+    --warna-bg-btn: #dd5d18;
+}
+
+.bg-pct{
+    background-color: var(--warna-bg-primary);
+}
+
+.pct{
+    margin-left: 10px;
+    color: var(--color-text-primary);
+}
+
+.carousel-inner{
+    height: 20%;
+    background-position: center;
+    background-size: cover;
+}
+.header::after{
+    background-color: var(--warna-bg);
+    padding: 185px;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-btn{
+    color: var(--warna-text-primary);
+    background-color: var(--warna-bg-btn);
+}
+.bg-btn:hover{
+    color: var(--warna-text-primary);
+    background-color: var(--warna-bg-primary);
+}
