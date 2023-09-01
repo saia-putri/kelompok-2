@@ -48,7 +48,10 @@
      </div>
     </div>
  <!-- card artikel2 -->
-<div class="card mb-3 mt-5" style="max-width: 100%; height: 250px;">
+<div class="font">
+  <h2>Artikel</h2>
+</div>
+<div class="card mb-3" style="max-width: 100%; height: 250px;">
   <div class="row g-0">
     <div class="col-md-4">
       <img src="..." class="img-fluid rounded-start" alt="...">
