@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/home', function () {
     return view('pengunjung.index');
 });
+
+Route::get('/index', function () {
+    return view('admin.index');
+});
