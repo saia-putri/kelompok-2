@@ -3,17 +3,29 @@
     --warna-text-primary: #ffffff;
     --color-text-primary: #000000;
     --warna-bg: rgb(255, 255, 255);
-    --font: 'Poppins', sans-serif;
     --warna-bg-btn: #dd5d18;
+    --font-family: 'Poppins', sans-serif;
+    --font-family: 'Space Grotesk', sans-serif;
+    --font-family2: 'Stardos Stencil', cursive;
+    --font-family3: 'Brygada 1918', serif;
 }
 
 .bg-pct{
     background-color: var(--warna-bg-primary);
 }
 
+#blog{
+    font-size: 21px;
+    font-family: var(--font-family3);
+}
+.font{
+    font-family: var(--font-family2);
+}
+
 .pct{
     margin-left: 10px;
     color: var(--color-text-primary);
+    font-family: var(--font-family);
 }
 
 .carousel-inner{
@@ -35,4 +47,8 @@
 .bg-btn:hover{
     color: var(--warna-text-primary);
     background-color: var(--warna-bg-primary);
+}
+
+.vid{
+    border-radius: 15px 0px 15px 0px;
 }
