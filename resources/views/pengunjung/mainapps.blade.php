@@ -30,13 +30,13 @@
     </div>
     </header>
     <!-- ini navbar2 -->
-    <nav class="py-2 bg-body-tertiary border-bottom sticky-top">
+    <nav class="py-2 bg-body-tertiary border-bottom sticky-top color-font">
     <div class="container d-flex flex-wrap">
       <ul class="nav me-auto">
-        <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2 active" aria-current="page">Beranda</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Artikel</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Pengumuman</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Tentang Kami</a></li>
+        <li class="nav-item"><a href="/home" class="nav-link link-body-emphasis px-2 active" aria-current="page">Beranda</a></li>
+        <li class="nav-item"><a href="/artikel" class="nav-link link-body-emphasis px-2">Artikel</a></li>
+        <li class="nav-item"><a href="/pengumuman" class="nav-link link-body-emphasis px-2">Pengumuman</a></li>
+        <li class="nav-item"><a href="/about" class="nav-link link-body-emphasis px-2">Tentang Kami</a></li>
       </ul>
       <ul class="nav">
         <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Login</a></li>
@@ -45,24 +45,24 @@
     </div>
     </nav>
 
+    <!-- header bg -->
     <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
-    <!-- header bg -->
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="/img/campus.png" alt=""  width="100%">
+        <img src="/img/PalCom.jpg" alt=""  width="100%">
       </div>
 
       <div class="carousel-item">
-        <img src="/img/poster.jpg" alt=""  width="100%">
+        <img src="/img/palcom1.jpg" alt=""  width="100%">
       </div>
 
       <div class="carousel-item">
-        <img src="/img/poster2.jpg" alt=""  width="100%">
+        <img src="/img/palcom2.jpg" alt=""  width="100%">
       </div>
     </div>
 

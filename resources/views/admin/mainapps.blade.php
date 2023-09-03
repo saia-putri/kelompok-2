@@ -25,7 +25,7 @@
     </div>
     </header>
     <!-- ini navbar2 -->
-    <nav class="py-2 bg-body-tertiary border-bottom sticky-top">
+    <nav class="py-2 bg-body-tertiary border-bottom sticky-top color-font">
     <div class="container d-flex flex-wrap">
       <ul class="nav me-auto">
         <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2 active" aria-current="page">Beranda</a></li>

@@ -11,7 +11,11 @@
 }
 
 .bg-pct{
+    font-family: var(--font-family);
     background-color: var(--warna-bg-primary);
+}
+.color-font{
+    font-family: var(--font-family);
 }
 
 #blog{
@@ -29,7 +33,6 @@
 }
 
 .carousel-inner{
-    height: 20%;
     background-position: center;
     background-size: cover;
 }

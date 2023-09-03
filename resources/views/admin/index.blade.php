@@ -3,8 +3,10 @@
     Home
 @endsection
 @section('content')
+<section id="blog">
+<div class="container">
 
-<table class="table">
+<table class="table mb-5 mt-5">
   <thead>
     <tr>
       <th scope="col">#</th>
@@ -34,4 +36,6 @@
   </tbody>
 </table>
 
+</div>
+</section>
 @endsection
