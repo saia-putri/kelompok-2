@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Pengunjungcontroller;
+use App\Http\Controllers\Artikelcontroller;
+use App\Http\Controllers\Pengumumancontroller;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,14 +16,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/home', function () {
-    return view('pengunjung.index');
-});
-
 Route::get('/index', function () {
     return view('admin.index');
 });
 
-Route::get('/artikel', function () {
+
+Route::get('/v-artikel', function () {
     return view('admin.artikel');
 });
+
+Route::get('/home', [Pengunjungcontroller::class, 'index']);
+Route::get('/artikel', [Pengunjungcontroller::class, 'artikel']);
+Route::get('/pengumuman', [Pengunjungcontroller::class, 'pengumuman']);
+Route::get('/about', [Pengunjungcontroller::class, 'about']);
+
