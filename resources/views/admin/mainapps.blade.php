@@ -28,10 +28,10 @@
     <nav class="py-2 bg-body-tertiary border-bottom sticky-top color-font">
     <div class="container d-flex flex-wrap">
       <ul class="nav me-auto">
-        <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2 active" aria-current="page">Beranda</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Artikel</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Pengumuman</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">User</a></li>
+        <li class="nav-item"><a href="/index" class="nav-link link-body-emphasis px-2 active" aria-current="page">Beranda</a></li>
+        <li class="nav-item"><a href="/artikel" class="nav-link link-body-emphasis px-2">Artikel</a></li>
+        <li class="nav-item"><a href="/pengumuman" class="nav-link link-body-emphasis px-2">Pengumuman</a></li>
+        <li class="nav-item"><a href="/user" class="nav-link link-body-emphasis px-2">User</a></li>
       </ul>
       <ul class="nav">
         <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Login</a></li>
