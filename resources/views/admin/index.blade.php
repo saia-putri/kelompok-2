@@ -4,7 +4,9 @@
 @endsection
 @section('content')
 <section id="header" class="header">
-<div class="text-primary-emphasis" ><h1>Selamat Datang</h1></div>
+  <div class="container mb-2 mt-2 mimin">
+    <marquee behavior="" direction=""><h1>Selamat Datang Mimin</h1></marquee>
+  </div>
 <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -34,6 +36,5 @@
       <span class="visually-hidden">Next</span>
     </button>
 </div>
- </div>
 </section>
 @endsection
