@@ -16,17 +16,20 @@ use App\Http\Controllers\Pengumumancontroller;
 |
 */
 
+
 Route::get('/index', function () {
     return view('admin.index');
 });
 
-
-
-Route::get('/v-artikel', function () {
-    return view('admin.artikel');
+Route::get('/datapengumuman', function () {
+    return view('admin.pengumuman');
 });
 
 Route::get('/home', [Pengunjungcontroller::class, 'index']);
 Route::get('/artikel', [Pengunjungcontroller::class, 'artikel']);
 Route::get('/pengumuman', [Pengunjungcontroller::class, 'pengumuman']);
 Route::get('/about', [Pengunjungcontroller::class, 'about']);
+
+Route::get('/dataartikel', [Artikelcontroller::class, 'index']);
+Route::get('/createartikel', [Artikelcontroller::class, 'create']);
+Route::get('/editartikel/{id}', [Artikelcontroller::class, 'edit']);

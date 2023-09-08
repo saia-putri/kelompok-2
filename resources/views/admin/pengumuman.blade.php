@@ -1,6 +1,6 @@
 @extends('admin.mainapps')
 @section('title')
-    Artikel
+  Pengumuman
 @endsection
 @section('content')
 <section id="blog">
@@ -8,7 +8,7 @@
 
 <table class="table">
   <thead>
-  <a href="/create" class="btn bg-btn mb-2">Tambahkan Artikel</a>
+  <a href="/create" class="btn bg-btn mb-2">Tambahkan Pengumuman</a>
     <tr>
       <th scope="col">No</th>
       <th scope="col">First</th>

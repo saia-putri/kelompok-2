@@ -11,15 +11,21 @@
 }
 
 .bg-pct{
-    font-family: var(--font-family);
+    font-weight: bold;
+    text-align: center;
+    font-family: var(--font-family3);
+    background-color: var(--warna-bg-primary);
+}
+.bg-pct1{
     background-color: var(--warna-bg-primary);
 }
 .color-font{
-    font-family: var(--font-family);
+    font-weight: bold;
+    font-family: var(--font-family3);
 }
 
 #blog{
-    font-size: 21px;
+    font-size: 17px;
     font-family: var(--font-family3);
 }
 .font{
@@ -28,8 +34,21 @@
 
 .pct{
     margin-left: 10px;
+    font-weight: bold;
     color: var(--color-text-primary);
-    font-family: var(--font-family);
+    font-family: var(--font-family3);
+}
+.pct1{
+    margin-left: 10px;
+    font-weight: bold;
+    color: var(--color-text-primary);
+    font-family: var(--font-family3);
+}
+.pct2{
+    text-align: center;
+    font-weight: bold;
+    color: var(--color-text-primary);
+    font-family: var(--font-family3);
 }
 
 .carousel-inner{
@@ -54,4 +73,13 @@
 
 .vid{
     border-radius: 15px 0px 15px 0px;
+}
+
+.mimin{
+    font-family: var(--font-family3);
+    color: var(--warna-bg-primary);
+}
+
+.about{
+    text-align: center;
 }

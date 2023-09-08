@@ -10,14 +10,14 @@
     <!-- css local -->
     <link rel="stylesheet" href="{{ asset('/') }}style.css">
   </head>
-  
+
   <body>
     <!-- ini navbar1 -->
     <header class="py-3 mb-4 border-bottom">
     <div class="container d-flex flex-wrap justify-content-center">
       <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
       <img src="/img/pct.opi.jpg" alt=""  width="50" height="50" >
-        <span class="fs-4 pct">PalComTech.Opi NEWS</span>
+        <span class="fs-4 pct1">PalComTech.Opi NEWS</span>
       </a>
       <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
         <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
@@ -25,12 +25,12 @@
     </div>
     </header>
     <!-- ini navbar2 -->
-    <nav class="py-2 bg-body-tertiary border-bottom sticky-top color-font">
+    <nav class="py-2 bg-body-tertiary border-bottom sticky-top pct2">
     <div class="container d-flex flex-wrap">
       <ul class="nav me-auto">
         <li class="nav-item"><a href="/index" class="nav-link link-body-emphasis px-2 active" aria-current="page">Beranda</a></li>
-        <li class="nav-item"><a href="/artikel" class="nav-link link-body-emphasis px-2">Artikel</a></li>
-        <li class="nav-item"><a href="/pengumuman" class="nav-link link-body-emphasis px-2">Pengumuman</a></li>
+        <li class="nav-item"><a href="/dataartikel" class="nav-link link-body-emphasis px-2">Artikel</a></li>
+        <li class="nav-item"><a href="/datapengumuman" class="nav-link link-body-emphasis px-2">Pengumuman</a></li>
         <li class="nav-item"><a href="/user" class="nav-link link-body-emphasis px-2">User</a></li>
       </ul>
       <ul class="nav">
@@ -44,13 +44,10 @@
      @yield('content')
 
     <!-- ini footer -->
-    <footer class="py-3 bg-pct">
+    <footer class="py-4 bg-pct1 pct2">
     <div class="container">
         <div class="text-white">
-            Copyright &copy by.kelompok-2
-        </div>
-        <div class="text-white">
-            PalComTech.Opi NEWS
+            Copyright &copy PalComTech.Opi NEWS | by.Akbar-Putri
         </div>
     </div>
     </footer>

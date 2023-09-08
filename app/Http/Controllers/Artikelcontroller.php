@@ -12,7 +12,7 @@ class Artikelcontroller extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.artikel');
     }
 
     /**
@@ -20,7 +20,7 @@ class Artikelcontroller extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.create');
     }
 
     /**
@@ -28,7 +28,26 @@ class Artikelcontroller extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate(
+            [
+                'gambar_post' => 'mimes:png,jpg,gif|image|max:5048',
+                'penulis_post' => 'required',
+                'isi_post' => 'required',
+                'judul_post' => 'required',
+            ]
+        );
+
+        $file = $request->file('gambar_post');
+        $path = $file->storeAs('uploads', time() .'.'. $request->file('gambar_post')->extension());
+
+        $post = new Post;
+        $post->penulis_post = $request['penulis_post'];
+        $post->judul_post = $request['judul_post'];
+        $post->isi_post = $request['isi_post'];
+        $post->gambar_post = $path;
+        $post->save();
+
+        return redirect('/index');
     }
 
     /**
@@ -42,9 +61,10 @@ class Artikelcontroller extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    // public function edit(string $id)
+    public function edit()
     {
-        //
+        return view('admin.edit');
     }
 
     /**
