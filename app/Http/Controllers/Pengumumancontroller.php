@@ -12,7 +12,7 @@ class Pengumumancontroller extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.pengumuman');
     }
 
     /**
@@ -20,7 +20,7 @@ class Pengumumancontroller extends Controller
      */
     public function create()
     {
-        return view('admin.pengumuman');
+        return view('admin.createpengumuman');
     }
 
     /**
