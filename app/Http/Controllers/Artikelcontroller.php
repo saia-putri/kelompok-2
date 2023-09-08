@@ -64,7 +64,7 @@ class Artikelcontroller extends Controller
     // public function edit(string $id)
     public function edit()
     {
-        return view('admin.edit');
+        return view('admin.editartikel');
     }
 
     /**

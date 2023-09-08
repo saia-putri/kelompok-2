@@ -5,7 +5,7 @@
 @section('content')
 <section id="blog">
 <div class="container py-5">
-    <h3 class="fw-bold">Edit Blog</h3>
+    <h3 class="fw-bold">Edit Pengumuman</h3>
 <div class="card">
 
     <div class="card-body">           
@@ -30,7 +30,7 @@
                 <img src="" class="img-thumbhnail mt-3" width="30%" alt="Foto">
             </div>
             <div class="text-end">
-                <a href="/dataartikel" class="btn bg-btn">Kembali</a>
+                <a href="/datapengumuman" class="btn bg-btn">Kembali</a>
                 <button type="submit" class="btn bg-btn">Update</button>
             </div>
         </form>

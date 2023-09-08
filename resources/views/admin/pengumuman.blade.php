@@ -24,7 +24,7 @@
       <td>Otto</td>
       <td>@mdo</td>
       <td>
-        <a href="/editartikel" class="btn bg-btn">edit</a>
+        <a href="/editpengumuman" class="btn bg-btn">edit</a>
         <a href="/" class="btn bg-btn">delete</a>
         <a href="/" class="btn bg-btn">detail</a>
       </td>
@@ -35,7 +35,7 @@
       <td>Thornton</td>
       <td>@fat</td>
       <td>
-        <a href="/editartikel" class="btn bg-btn">edit</a>
+        <a href="/editpengumuman" class="btn bg-btn">edit</a>
         <a href="/" class="btn bg-btn">delete</a>
         <a href="/" class="btn bg-btn">detail</a>
       </td>
@@ -45,7 +45,7 @@
       <td colspan="2">Larry the Bird</td>
       <td>@twitter</td>
       <td>
-        <a href="/editartikel" class="btn bg-btn">edit</a>
+        <a href="/editpengumuman" class="btn bg-btn">edit</a>
         <a href="/" class="btn bg-btn">delete</a>
         <a href="/" class="btn bg-btn">detail</a>
       </td>
