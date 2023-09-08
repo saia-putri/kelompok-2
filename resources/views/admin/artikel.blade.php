@@ -3,6 +3,7 @@
     Home
 @endsection
 @section('content')
+
 <table class="table">
   <thead>
     <tr>
