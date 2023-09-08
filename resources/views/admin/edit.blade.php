@@ -30,7 +30,7 @@
                 <img src="" class="img-thumbhnail mt-3" width="30%" alt="Foto">
             </div>
             <div class="text-end">
-                <a href="/index" class="btn bg-btn">Kembali</a>
+                <a href="/dataartikel" class="btn bg-btn">Kembali</a>
                 <button type="submit" class="btn bg-btn">Update</button>
             </div>
         </form>

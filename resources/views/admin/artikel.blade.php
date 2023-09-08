@@ -9,7 +9,7 @@
 
 <table class="table">
   <thead>
-  <a href="/create" class="btn bg-btn mb-2">Tambahkan Artikel</a>
+  <a href="/createartikel" class="btn bg-btn mb-2">Tambahkan Artikel</a>
     <tr>
       <th scope="col">No</th>
       <th scope="col">First</th>
@@ -25,7 +25,7 @@
       <td>Otto</td>
       <td>@mdo</td>
       <td>
-        <a href="/edit" class="btn bg-btn">edit</a>
+        <a href="/editartikel" class="btn bg-btn">edit</a>
         <a href="/" class="btn bg-btn">delete</a>
         <a href="/" class="btn bg-btn">detail</a>
       </td>
@@ -36,7 +36,7 @@
       <td>Thornton</td>
       <td>@fat</td>
       <td>
-        <a href="/edit" class="btn bg-btn">edit</a>
+        <a href="/editartikel" class="btn bg-btn">edit</a>
         <a href="/" class="btn bg-btn">delete</a>
         <a href="/" class="btn bg-btn">detail</a>
       </td>
@@ -46,7 +46,7 @@
       <td colspan="2">Larry the Bird</td>
       <td>@twitter</td>
       <td>
-        <a href="/edit" class="btn bg-btn">edit</a>
+        <a href="/editartikel" class="btn bg-btn">edit</a>
         <a href="/" class="btn bg-btn">delete</a>
         <a href="/" class="btn bg-btn">detail</a>
       </td>

@@ -10,7 +10,7 @@
     <!-- css local -->
     <link rel="stylesheet" href="{{ asset('/') }}style.css">
   </head>
-  
+
   <body>
     <!-- ini navbar1 -->
     <header class="py-3 mb-4 border-bottom">
@@ -29,8 +29,8 @@
     <div class="container d-flex flex-wrap">
       <ul class="nav me-auto">
         <li class="nav-item"><a href="/index" class="nav-link link-body-emphasis px-2 active" aria-current="page">Beranda</a></li>
-        <li class="nav-item"><a href="/artikel.admin" class="nav-link link-body-emphasis px-2">Artikel</a></li>
-        <li class="nav-item"><a href="/pengumuman.admin" class="nav-link link-body-emphasis px-2">Pengumuman</a></li>
+        <li class="nav-item"><a href="/dataartikel" class="nav-link link-body-emphasis px-2">Artikel</a></li>
+        <li class="nav-item"><a href="/datapengumuman" class="nav-link link-body-emphasis px-2">Pengumuman</a></li>
         <li class="nav-item"><a href="/user" class="nav-link link-body-emphasis px-2">User</a></li>
       </ul>
       <ul class="nav">
