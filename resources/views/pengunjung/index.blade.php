@@ -43,7 +43,6 @@
     </div>
  <!-- card artikel2 -->
 <div class="font mb-2 mt-4">
-  <h2>Pengumuman</h2>
 </div>
 <div class="card" style="max-width: 100%; height: 250px;">
   <div class="row g-0">
@@ -52,7 +51,7 @@
     </div>
     <div class="col-md-8">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
+        <h3 class="card-title">Card title</h3>
         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       </div>
     </div>
@@ -63,7 +62,7 @@
   <div class="row g-0">
     <div class="col-md-8">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
+        <h3 class="card-title">Card title</h3>
         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       </div>
     </div>

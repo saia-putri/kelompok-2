@@ -80,13 +80,10 @@
      @yield('content')
 
     <!-- ini footer -->
-    <footer class="py-3 bg-pct">
+    <footer class="py-4 bg-pct">
     <div class="container">
-        <div class="text-white">
-            Copyright &copy by.kelompok-2
-        </div>
-        <div class="text-white">
-            PalComTech.Opi NEWS
+    <div class="text-white">
+            Copyright &copy PalComTech.Opi NEWS | by.Akbar-Putri
         </div>
     </div>
     </footer>

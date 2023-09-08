@@ -4,7 +4,7 @@
 @endsection
 @section('content')
 <section id="header" class="header">
-<div class="text-primary-emphasis" ><h1>Selamat Datang</h1></div>
+<div class="container mb-2 mt-2 mimin">
 <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -33,7 +33,39 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
+
+  </div>
 </div>
- </div>
+<marquee behavior="" direction=""><h1>Selamat Datang Mimin</h1></marquee>
+</section>
+<section>
+  <div class=container>
+<div class="row row-cols-1 pt-5 row-cols-md-3 g-3 mb-5">
+<div class="col">
+<div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+  <div class="card-header">Data Artikel</div>
+  <div class="card-body">
+    <h1 class="card-title">2</h1>
+  </div>
+</div>
+</div>
+<div class="col">
+<div class="card text-bg-success mb-3" style="max-width: 18rem;">
+  <div class="card-header">Data Pengumuman</div>
+  <div class="card-body">
+    <h1 class="card-title">2</h1>
+  </div>
+</div>
+</div>
+<div class="col">
+<div class="card text-bg-danger mb-3" style="max-width: 18rem;">
+  <div class="card-header">Data User</div>
+  <div class="card-body">
+    <h1 class="card-title">2</h1>
+  </div>
+</div>
+</div>
+</div>
+</div>
 </section>
 @endsection
