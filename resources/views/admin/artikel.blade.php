@@ -6,6 +6,7 @@
 <section id="blog">
 <div class="container mb-5 mt-5">
 
+
 <table class="table">
   <thead>
   <a href="/createartikel" class="btn bg-btn mb-2">Tambahkan Artikel</a>
