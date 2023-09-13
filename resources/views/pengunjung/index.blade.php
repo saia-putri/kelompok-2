@@ -80,7 +80,7 @@
   <div class="col">
     <div class="card h-100">
         <div class="col-auto d-none d-lg-block">
-          <svg class="bd-placeholder-img" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/></svg>
+          <img src="img/1tahun.jpg" alt="" width="100%" height="250">
         </div>
       <div class="card-body">
         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, rerum?</p>
@@ -93,7 +93,7 @@
   <div class="col">
     <div class="card h-100">
         <div class="col-auto d-none d-lg-block">
-          <svg class="bd-placeholder-img" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/></svg>
+          <img src="img/1tahun.jpg" alt="" width="100%" height="250">
         </div>
       <div class="card-body">
         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, tempore!</p>
@@ -106,7 +106,7 @@
   <div class="col">
     <div class="card h-100">
         <div class="col-auto d-none d-lg-block">
-          <svg class="bd-placeholder-img" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/></svg>
+          <img src="img/1tahun.jpg" alt="" width="100%" height="250">
         </div>
       <div class="card-body">
         <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -118,8 +118,8 @@
   </div>
   <div class="col">
     <div class="card h-100">
-       <div class="col-auto d-none d-lg-block">
-          <svg class="bd-placeholder-img" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/></svg>
+        <div class="col-auto d-none d-lg-block">
+          <img src="img/1tahun.jpg" alt="" width="100%" height="250">
         </div>
       <div class="card-body">
         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, ipsum!</p>

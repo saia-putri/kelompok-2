@@ -10,20 +10,17 @@
     --font-family3: 'Brygada 1918', serif;
 }
 
+/* style pengunjung */
 .bg-pct{
     font-weight: bold;
     text-align: center;
     font-family: var(--font-family3);
     background-color: var(--warna-bg-primary);
 }
-.bg-pct1{
-    background-color: var(--warna-bg-primary);
-}
 .color-font{
     font-weight: bold;
     font-family: var(--font-family3);
 }
-
 #blog{
     font-size: 17px;
     font-family: var(--font-family3);
@@ -31,12 +28,46 @@
 .font{
     font-family: var(--font-family2);
 }
-
 .pct{
     margin-left: 10px;
     font-weight: bold;
     color: var(--color-text-primary);
     font-family: var(--font-family3);
+}
+.carousel-inner{
+    background-position: center;
+    background-size: cover;
+}
+.header::after{
+    background-color: var(--warna-bg);
+    padding: 185px;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.bg-btn{
+    color: var(--warna-text-primary);
+    background-color: var(--warna-bg-btn);
+}
+.bg-btn:hover{
+    color: var(--warna-text-primary);
+    background-color: var(--warna-bg-primary);
+}
+.about{
+    text-align: center;
+}
+.vid{
+    border-radius: 15px 0px 15px 0px;
+}
+
+
+/* style admin */
+.header{
+    background-image: url(img/palcom1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
 }
 .pct1{
     margin-left: 10px;
@@ -50,36 +81,20 @@
     color: var(--color-text-primary);
     font-family: var(--font-family3);
 }
-
-.carousel-inner{
-    background-position: center;
-    background-size: cover;
-}
-.header::after{
-    background-color: var(--warna-bg);
-    padding: 185px;
-    background-position: center;
-    background-size: cover;
-}
-
-.bg-btn{
-    color: var(--warna-text-primary);
-    background-color: var(--warna-bg-btn);
-}
-.bg-btn:hover{
-    color: var(--warna-text-primary);
+.bg-pct1{
+    font-family: var(--font-family3);
     background-color: var(--warna-bg-primary);
 }
-
-.vid{
-    border-radius: 15px 0px 15px 0px;
+.card1{
+    font-family: var(--font-family3);
+    background-color: #5291aa;
 }
-
 .mimin{
     font-family: var(--font-family3);
     color: var(--warna-bg-primary);
 }
-
-.about{
+.angka{
+    font-family: var(--font-family2);
     text-align: center;
+    font-size: 150px;
 }

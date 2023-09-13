@@ -10,10 +10,6 @@
     <div class="card-body">      
     <form action="/" method="post" enctype="multipart/form-data">
         <div class="mb-3">
-            <label for="penulis" class="form-label">Penulis</label>
-            <input type="hidden" class="form-control" id="penulis" name="penulis_post">
-        </div>
-        <div class="mb-3">
             <label for="judul_post" class="form-label">Judul Post</label>
             <input type="text" class="form-control" id="judul_post" name="judul_post" placeholder="judul post">
         </div>

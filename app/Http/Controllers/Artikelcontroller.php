@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Artikel;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 
@@ -20,7 +21,7 @@ class Artikelcontroller extends Controller
      */
     public function create()
     {
-        return view('admin.create');
+        return view('admin.createartikel');
     }
 
     /**
@@ -28,26 +29,7 @@ class Artikelcontroller extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate(
-            [
-                'gambar_post' => 'mimes:png,jpg,gif|image|max:5048',
-                'penulis_post' => 'required',
-                'isi_post' => 'required',
-                'judul_post' => 'required',
-            ]
-        );
-
-        $file = $request->file('gambar_post');
-        $path = $file->storeAs('uploads', time() .'.'. $request->file('gambar_post')->extension());
-
-        $post = new Post;
-        $post->penulis_post = $request['penulis_post'];
-        $post->judul_post = $request['judul_post'];
-        $post->isi_post = $request['isi_post'];
-        $post->gambar_post = $path;
-        $post->save();
-
-        return redirect('/index');
+       //
     }
 
     /**

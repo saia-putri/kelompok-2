@@ -36,7 +36,7 @@
         <li class="nav-item"><a href="/home" class="nav-link link-body-emphasis px-2 active" aria-current="page">Beranda</a></li>
         <li class="nav-item"><a href="/artikel" class="nav-link link-body-emphasis px-2">Artikel</a></li>
         <li class="nav-item"><a href="/pengumuman" class="nav-link link-body-emphasis px-2">Pengumuman</a></li>
-        <li class="nav-item"><a href="/about" class="nav-link link-body-emphasis px-2">Tentang Kami</a></li>
+        <li class="nav-item"><a href="/about" class="nav-link link-body-emphasis px-2">About</a></li>
       </ul>
       <ul class="nav">
         <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Login</a></li>
@@ -54,11 +54,11 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="/img/PalCom.jpg" alt=""  width="100%">
+        <img src="/img/palcom1.jpg" alt=""  width="100%">
       </div>
 
       <div class="carousel-item">
-        <img src="/img/palcom1.jpg" alt=""  width="100%">
+        <img src="/img/palcom3.jpg" alt=""  width="100%">
       </div>
 
       <div class="carousel-item">
