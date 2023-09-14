@@ -53,7 +53,7 @@
 <div class="card text-bg-success mb-3" style="max-width: 18rem;">
   <div class="card-header">Data Pengumuman</div>
   <div class="card-body">
-    <h1 class="card-title">2</h1>
+    <h1 class="card-title" class="angka">2</h1>
   </div>
 </div>
 </div>
