@@ -24,7 +24,7 @@
       <th scope="row">1</th>
       <td>{{$Artikel->judul_artikel}}</td>
       <td>{{$Artikel->isi_artikel}}</td>
-      <td>{{$Artikel->gambar_artikel}}</td>
+      <td><img src="{{ asset('storage/' . $Artikel->gambar_artikel)}}" width="20%" alt=""></td>
       <td>
         <a href="/editartikel" class="btn bg-btn">edit</a>
         <a href="/" class="btn bg-btn">delete</a>
