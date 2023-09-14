@@ -30,6 +30,7 @@ Route::get('/about', [Pengunjungcontroller::class, 'about']);
 Route::get('/dataartikel', [Artikelcontroller::class, 'index']);
 Route::get('/createartikel', [Artikelcontroller::class, 'create']);
 Route::get('/editartikel', [Artikelcontroller::class, 'edit']);
+Route::post('/saveartikel', [Artikelcontroller::class, 'store']);
 
 Route::get('/datapengumuman', [Pengumumancontroller::class, 'index']);
 Route::get('/createpengumuman', [Pengumumancontroller::class, 'create']);

@@ -13,7 +13,8 @@ class Artikelcontroller extends Controller
      */
     public function index()
     {
-        return view('admin.artikel');
+        $artikels = Artikel::all();
+        return view('admin.artikel', compact('artikels'));
     }
 
     /**
@@ -40,13 +41,13 @@ class Artikelcontroller extends Controller
         $file = $request->file('gambar_artikel');
         $path = $file->storeAs('uploads', time() .'.'. $request->file('gambar_artikel')->extension());
 
-        $post = new Post;
-        $post->judul_artikel = $request['judul_artikel'];
-        $post->isi_artikel = $request['isi_artikel'];
-        $post->gambar_artikel = $path;
-        $post->save();
+        $artikels = new Artikel;
+        $artikels->judul_artikel = $request['judul_artikel'];
+        $artikels->isi_artikel = $request['isi_artikel'];
+        $artikels->gambar_artikel = $path;
+        $artikels->save();
 
-        return redirect('/index');
+        return redirect('/dataartikel');
     }
 
     /**

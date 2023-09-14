@@ -8,8 +8,9 @@
 <h3 class="fw-bold">Membuat Artikel</h3>
 <div class="card">
     <div class="card-body">      
-    <form action="/" method="post" enctype="multipart/form-data">
-        <div class="mb-3">
+    <form action="/saveartikel" method="post" enctype="multipart/form-data">
+       @csrf
+    <div class="mb-3">
             <label for="judul_artikel" class="form-label">Judul artikel</label>
             <input type="text" class="form-control" id="judul_artikel" name="judul_artikel" placeholder="judul artikel">
         </div>
