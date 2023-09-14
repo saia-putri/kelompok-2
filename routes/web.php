@@ -34,3 +34,4 @@ Route::get('/editartikel', [Artikelcontroller::class, 'edit']);
 Route::get('/datapengumuman', [Pengumumancontroller::class, 'index']);
 Route::get('/createpengumuman', [Pengumumancontroller::class, 'create']);
 Route::get('/editpengumuman', [Pengumumancontroller::class, 'edit']);
+Route::post('/savepengumuman', [Pengumumancontroller::class, 'store']);

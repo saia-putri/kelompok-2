@@ -8,7 +8,8 @@
 <h3 class="fw-bold">Membuat Pengumuman</h3>
 <div class="card">
     <div class="card-body">      
-    <form action="/" method="post" enctype="multipart/form-data">
+    <form action="/savepengumuman" method="post" enctype="multipart/form-data">
+        @csrf
         <div class="mb-3">
             <label for="judul_pengumuman" class="form-label">Judul Pengumuman</label>
             <input type="text" class="form-control" id="judul_pengumuman" name="judul_pengumuman" placeholder="judul pengumuman">

@@ -18,38 +18,19 @@
     </tr>
   </thead>
   <tbody>
+  @foreach ($pengumumen as $Pengumuman)
     <tr>
       <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+      <td>{{$Pengumuman->judul_pengumuman}}</td>
+      <td>{{$Pengumuman->isi_pengumuman}}</td>
+      <td><img src="{{ asset('storage/' . $Pengumuman->gambar_pengumuman) }}" alt="" width="20%"></td>
       <td>
         <a href="/editpengumuman" class="btn bg-btn">edit</a>
         <a href="/" class="btn bg-btn">delete</a>
         <a href="/" class="btn bg-btn">detail</a>
       </td>
     </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-      <td>
-        <a href="/editpengumuman" class="btn bg-btn">edit</a>
-        <a href="/" class="btn bg-btn">delete</a>
-        <a href="/" class="btn bg-btn">detail</a>
-      </td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
-      <td>
-        <a href="/editpengumuman" class="btn bg-btn">edit</a>
-        <a href="/" class="btn bg-btn">delete</a>
-        <a href="/" class="btn bg-btn">detail</a>
-      </td>
-    </tr>
+  @endforeach
   </tbody>
 </table>
 
