@@ -12,7 +12,8 @@ class Pengumumancontroller extends Controller
      */
     public function index()
     {
-        return view('admin.pengumuman');
+        $pengumumen = Pengumuman::all();
+        return view('admin.pengumuman', compact('pengumumen'));
     }
 
     /**
@@ -39,13 +40,13 @@ class Pengumumancontroller extends Controller
         $file = $request->file('gambar_pengumuman');
         $path = $file->storeAs('uploads', time() .'.'. $request->file('gambar_pengumuman')->extension());
 
-        $post = new Post;
-        $post->judul_pengumuman = $request['judul_pengumuman'];
-        $post->isi_pengumuman = $request['isi_pengumuman'];
-        $post->gambar_pengumuman = $path;
-        $post->save();
+        $pengumumen = new Pengumuman;
+        $pengumumen->judul_pengumuman = $request['judul_pengumuman'];
+        $pengumumen->isi_pengumuman = $request['isi_pengumuman'];
+        $pengumumen->gambar_pengumuman = $path;
+        $pengumumen->save();
 
-        return redirect('/index');
+        return redirect('/datapengumuman');
     }
 
     /**

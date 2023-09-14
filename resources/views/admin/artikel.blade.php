@@ -19,38 +19,19 @@
     </tr>
   </thead>
   <tbody>
+    @foreach ($artikels as $Artikel)
     <tr>
       <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+      <td>{{$Artikel->judul_artikel}}</td>
+      <td>{{$Artikel->isi_artikel}}</td>
+      <td><img src="{{ asset('storage/' . $Artikel->gambar_artikel)}}" width="20%" alt=""></td>
       <td>
         <a href="/editartikel" class="btn bg-btn">edit</a>
         <a href="/" class="btn bg-btn">delete</a>
         <a href="/" class="btn bg-btn">detail</a>
       </td>
     </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-      <td>
-        <a href="/editartikel" class="btn bg-btn">edit</a>
-        <a href="/" class="btn bg-btn">delete</a>
-        <a href="/" class="btn bg-btn">detail</a>
-      </td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
-      <td>
-        <a href="/editartikel" class="btn bg-btn">edit</a>
-        <a href="/" class="btn bg-btn">delete</a>
-        <a href="/" class="btn bg-btn">detail</a>
-      </td>
-    </tr>
+    @endforeach
   </tbody>
 </table>
 
