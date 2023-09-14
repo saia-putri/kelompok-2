@@ -22,6 +22,7 @@ Route::get('/index', function () {
 });
 
 
+Route::get('/', [Pengunjungcontroller::class, 'index']);
 Route::get('/home', [Pengunjungcontroller::class, 'index']);
 Route::get('/artikel', [Pengunjungcontroller::class, 'artikel']);
 Route::get('/pengumuman', [Pengunjungcontroller::class, 'pengumuman']);
