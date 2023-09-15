@@ -34,5 +34,7 @@ Route::post('/saveartikel', [Artikelcontroller::class, 'store']);
 
 Route::get('/datapengumuman', [Pengumumancontroller::class, 'index']);
 Route::get('/createpengumuman', [Pengumumancontroller::class, 'create']);
-Route::get('/editpengumuman', [Pengumumancontroller::class, 'edit']);
+Route::get('/editpengumuman/{id}', [Pengumumancontroller::class, 'edit']);
 Route::post('/savepengumuman', [Pengumumancontroller::class, 'store']);
+Route::post('/updatepengumuman/{id}', [Pengumumancontroller::class, 'update']);
+Route::get('/deletepengumuman/{id}', [Pengumumancontroller::class, 'destroy']);

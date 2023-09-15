@@ -25,8 +25,8 @@
       <td>{{$Pengumuman->isi_pengumuman}}</td>
       <td><img src="{{ asset('storage/' . $Pengumuman->gambar_pengumuman) }}" alt="" width="20%"></td>
       <td>
-        <a href="/editpengumuman" class="btn bg-btn">edit</a>
-        <a href="/" class="btn bg-btn">delete</a>
+        <a href="/editpengumuman/{{ $Pengumuman->id }}" class="btn bg-btn">edit</a>
+        <a href="/deletepengumuman/{{ $Pengumuman->id }}" class="btn bg-btn">delete</a>
         <a href="/" class="btn bg-btn">detail</a>
       </td>
     </tr>

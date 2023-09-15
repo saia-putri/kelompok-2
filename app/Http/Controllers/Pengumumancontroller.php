@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Models\Pengumuman;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Illuminate\Support\Facades\Storage;
 
 class Pengumumancontroller extends Controller
 {
@@ -60,10 +61,10 @@ class Pengumumancontroller extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    // public function edit(string $id)
-    public function edit()
+    public function edit(string $id)
     {
-        return view('admin.editpengumuman');
+        $Pengumuman = Pengumuman::find($id);
+        return view('admin.editpengumuman', compact('Pengumuman'));
     }
 
     /**
@@ -71,7 +72,31 @@ class Pengumumancontroller extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $request->validate(
+            [
+                'gambar_post' => 'mimes:png,jpg,gif|image|max:5048',
+            ]
+        );
+
+        if($request->file('gambar_pengumuman'))
+        {
+            if($request->oldImage) {
+                storage::delete($request->oldImage);
+            }
+            $file = $request->file('gambar_pengumuman');
+            $path = $file->storeAs('uploads', time() .'.'. $request->file('gambar_pengumuman')->extension());
+        }
+        else {
+            $path = $request->oldImage;
+        }
+
+        $pengumumen = Pengumuman::find($id);
+        $pengumumen->judul_pengumuman = $request['judul_pengumuman'];
+        $pengumumen->isi_pengumuman = $request['isi_pengumuman'];
+        $pengumumen->gambar_pengumuman = $path;
+        $pengumumen->save();
+
+        return redirect('/datapengumuman');
     }
 
     /**
@@ -79,6 +104,7 @@ class Pengumumancontroller extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        Pengumuman::destroy('id', $id);
+        return redirect('/datapengumuman');
     }
 }
