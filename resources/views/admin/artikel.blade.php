@@ -21,13 +21,13 @@
   <tbody>
     @foreach ($artikels as $Artikel)
     <tr>
-      <th scope="row">1</th>
+      <th scope="row">{{ $loop->iteration }}</th>
       <td>{{$Artikel->judul_artikel}}</td>
       <td>{{$Artikel->isi_artikel}}</td>
-      <td><img src="{{ asset('storage/' . $Artikel->gambar_artikel)}}" width="20%" alt=""></td>
+      <td><img src="{{ asset('storage/' . $Artikel->gambar_artikel)}}" width="100" alt=""></td>
       <td>
-        <a href="/editartikel" class="btn bg-btn">edit</a>
-        <a href="/" class="btn bg-btn">delete</a>
+        <a href="/editartikel/{{ $Artikel->id }}" class="btn bg-btn">edit</a>
+        <a href="/deleteartikel/{{ $Artikel->id }}" class="btn bg-btn">delete</a>
         <a href="/" class="btn bg-btn">detail</a>
       </td>
     </tr>

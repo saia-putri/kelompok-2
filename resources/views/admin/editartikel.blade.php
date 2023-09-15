@@ -9,21 +9,24 @@
 <div class="card">
 
     <div class="card-body">           
-        <form action="/" method="post" enctype="multipart/form-data">
+    <form action="/updateartikel/{{ $Artikel->id }}" method="post" enctype="multipart/form-data">
+        @method('PUT')
+        @csrf
             <div class="mb-3">
                 <label for="judul_artikel" class="form-label">Judul artikel</label>
-                <input type="text" class="form-control" id="judul_artikel" name="judul_artikel" >
+                <input type="text" class="form-control" id="judul_artikel" name="judul_artikel" value="{{ $Artikel->judul_artikel }}">
             </div>
             <div class="mb-3">
                 <label for="isi_artikel" class="form-label">Isi artikel</label>
                 <textarea class="form-control" name="isi_artikel" id="isi_artikel" cols="30" rows="5">
+            {{ $Artikel->isi_artikel }}
             </textarea>
             </div>
             <div class="mb-3">
                 <label for="gambar_artikel" class="form-label">Gambar artikel</label>
                 <input type="file" class="form-control" id="gambar_artikel" name="gambar_artikel" accept="image/*">
-                <input type="hidden" name="oldImage" value="">
-                <img src="" class="img-thumbhnail mt-3" width="30%" alt="Foto">
+                <input type="hidden" name="oldImage" value="{{ $Artikel->gambar_artikel }}">
+                <img src="{{ asset('storage/' . $Artikel->gambar_artikel) }}" class="img-thumbhnail mt-3" width="30%" alt="Foto">
             </div>
             <div class="text-end">
                 <a href="/dataartikel" class="btn bg-btn">Kembali</a>

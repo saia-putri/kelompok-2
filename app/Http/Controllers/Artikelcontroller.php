@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Artikel;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Illuminate\Support\Facades\Storage;
 
 class Artikelcontroller extends Controller
 {
@@ -61,10 +62,11 @@ class Artikelcontroller extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    // public function edit(string $id)
-    public function edit()
+    public function edit(string $id)
+
     {
-        return view('admin.editartikel');
+        $Artikel = Artikel::find($id);
+        return view('admin.editartikel', compact('Artikel'));
     }
 
     /**
@@ -72,7 +74,31 @@ class Artikelcontroller extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $request->validate(
+            [
+                'gambar_artikel' => 'mimes:png,jpg,gif|image|max:5048',
+            ]
+        );
+
+        if($request->file('gambar_artikel'))
+        {
+            if($request->oldImage) {
+                storage::delete($request->oldImage);
+            }
+            $file = $request->file('gambar_artikel');
+            $path = $file->storeAs('uploads', time() .'.'. $request->file('gambar_artikel')->extension());
+        }
+        else {
+            $path = $request->oldImage;
+        }
+
+        $artikels = Artikel::find($id);
+        $artikels->judul_artikel = $request['judul_artikel'];
+        $artikels->isi_artikel = $request['isi_artikel'];
+        $artikels->gambar_artikel = $path;
+        $artikels->save();
+
+        return redirect('/dataartikel');
     }
 
     /**
@@ -80,6 +106,7 @@ class Artikelcontroller extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        Artikel::destroy('id', $id);
+        return redirect('/dataartikel');
     }
 }
