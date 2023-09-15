@@ -24,9 +24,9 @@ Route::get('/index', function () {
 
 Auth::routes();
 
+Route::get('/', [Pengunjungcontroller::class, 'index']);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/', [Pengunjungcontroller::class, 'index']);
 Route::get('/artikel', [Pengunjungcontroller::class, 'artikel']);
 Route::get('/pengumuman', [Pengunjungcontroller::class, 'pengumuman']);
 Route::get('/about', [Pengunjungcontroller::class, 'about']);
