@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\Controller;
 use App\Http\Controllers\Pengunjungcontroller;
 use App\Http\Controllers\Artikelcontroller;
 use App\Http\Controllers\Pengumumancontroller;
@@ -42,6 +43,8 @@ Route::get('/editpengumuman/{id}', [Pengumumancontroller::class, 'edit']);
 Route::post('/savepengumuman', [Pengumumancontroller::class, 'store']);
 Route::put('/updatepengumuman/{id}', [Pengumumancontroller::class, 'update']);
 Route::get('/deletepengumuman/{id}', [Pengumumancontroller::class, 'destroy']);
+
+Route::get('/user', [Controller::class, 'index']);
 
 
 
