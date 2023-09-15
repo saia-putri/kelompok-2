@@ -74,7 +74,7 @@ class Pengumumancontroller extends Controller
     {
         $request->validate(
             [
-                'gambar_post' => 'mimes:png,jpg,gif|image|max:5048',
+                'gambar_pengumuman' => 'mimes:png,jpg,gif|image|max:5048',
             ]
         );
 
