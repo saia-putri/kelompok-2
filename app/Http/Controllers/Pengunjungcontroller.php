@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\Pengumuman;
+use App\Models\Artikel;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Storage;
@@ -13,7 +14,10 @@ class Pengunjungcontroller extends Controller
      */
     public function index()
     {
-        return view('pengunjung.index');
+        $artikels = Artikel::all();
+        return view('pengunjung.index', compact('artikels'));
+        $Pengumuman = Pengumuman::find($id);
+        return view('admin.editpengumuman', compact('Pengumuman'));
     }
 
     /**
@@ -21,7 +25,8 @@ class Pengunjungcontroller extends Controller
      */
     public function artikel()
     {
-        return view('pengunjung.artikel');
+        $artikels = Artikel::all();
+        return view('pengunjung.artikel', compact('artikels'));
     }
 
     /**
@@ -45,5 +50,8 @@ class Pengunjungcontroller extends Controller
     /**
      * Store a newly created resource in storage.
      */
-   
+    public function detailartikel()
+    {
+        return view('pengunjung.detailartikel');
+    }
 }

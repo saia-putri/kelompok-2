@@ -31,6 +31,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/artikel', [Pengunjungcontroller::class, 'artikel']);
 Route::get('/pengumuman', [Pengunjungcontroller::class, 'pengumuman']);
 Route::get('/about', [Pengunjungcontroller::class, 'about']);
+Route::get('/detailartikel', [Pengunjungcontroller::class, 'detailartikel']);
 
 Route::get('/dataartikel', [Artikelcontroller::class, 'index']);
 Route::get('/createartikel', [Artikelcontroller::class, 'create']);
@@ -38,6 +39,7 @@ Route::get('/editartikel/{id}', [Artikelcontroller::class, 'edit']);
 Route::post('/saveartikel', [Artikelcontroller::class, 'store']);
 Route::put('/updateartikel/{id}', [Artikelcontroller::class, 'update']);
 Route::get('/deleteartikel/{id}', [Artikelcontroller::class, 'destroy']);
+Route::get('/detailartikel', [Artikelcontroller::class, 'show']);
 
 Route::get('/datapengumuman', [Pengumumancontroller::class, 'index']);
 Route::get('/createpengumuman', [Pengumumancontroller::class, 'create']);
@@ -45,6 +47,7 @@ Route::get('/editpengumuman/{id}', [Pengumumancontroller::class, 'edit']);
 Route::post('/savepengumuman', [Pengumumancontroller::class, 'store']);
 Route::put('/updatepengumuman/{id}', [Pengumumancontroller::class, 'update']);
 Route::get('/deletepengumuman/{id}', [Pengumumancontroller::class, 'destroy']);
+Route::get('/detailpengumuman', [Pengumumancontroller::class, 'show']);
 
 Route::get('/user', [Controller::class, 'index']);
 

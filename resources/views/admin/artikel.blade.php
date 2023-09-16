@@ -6,15 +6,14 @@
 <section id="blog">
 <div class="container mb-5 mt-5">
 
-
 <table class="table">
   <thead>
   <a href="/createartikel" class="btn bg-btn mb-2">Tambahkan Artikel</a>
     <tr>
       <th scope="col">No</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th scope="col">Judul Artikel</th>
+      <th scope="col">Isi Artikel</th>
+      <th scope="col">Gambar Artikel</th>
       <th scope="col">Option</th>
     </tr>
   </thead>
@@ -22,13 +21,13 @@
     @foreach ($artikels as $Artikel)
     <tr>
       <th scope="row">{{ $loop->iteration }}</th>
-      <td>{{$Artikel->judul_artikel}}</td>
-      <td>{{$Artikel->isi_artikel}}</td>
+      <td>{{ $Artikel->judul_artikel }}</td>
+      <td>{{ $Artikel->isi_artikel }}</td>
       <td><img src="{{ asset('storage/' . $Artikel->gambar_artikel)}}" width="100" alt=""></td>
       <td>
         <a href="/editartikel/{{ $Artikel->id }}" class="btn bg-btn">edit</a>
         <a href="/deleteartikel/{{ $Artikel->id }}" class="btn bg-btn">delete</a>
-        <a href="/" class="btn bg-btn">detail</a>
+        <a href="/detailartikel" class="btn bg-btn">detail</a>
       </td>
     </tr>
     @endforeach

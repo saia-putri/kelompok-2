@@ -11,9 +11,9 @@
   <a href="/createpengumuman" class="btn bg-btn mb-2">Tambahkan Pengumuman</a>
     <tr>
       <th scope="col">No</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th scope="col">Judul Pengumuman</th>
+      <th scope="col">Isi Pengumuman</th>
+      <th scope="col">Gambar Pengumuman</th>
       <th scope="col">Option</th>
     </tr>
   </thead>
@@ -27,7 +27,7 @@
       <td>
         <a href="/editpengumuman/{{ $Pengumuman->id }}" class="btn bg-btn">edit</a>
         <a href="/deletepengumuman/{{ $Pengumuman->id }}" class="btn bg-btn">delete</a>
-        <a href="/" class="btn bg-btn">detail</a>
+        <a href="/detailpengumuman" class="btn bg-btn">detail</a>
       </td>
     </tr>
   @endforeach

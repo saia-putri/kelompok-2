@@ -4,12 +4,12 @@
 @endsection
 @section('content')
 <section id="blog">
-<div class="container py-5">
+<div class="container py-3">
 @foreach ($pengumumen as $Pengumuman)
   <div class="card mt-5 mb-5" style="max-width: 100%;">
     <div class="row g-0">
       <div class="col-md-4">
-      <img src="{{ asset('storage/' . $Pengumuman->gambar_pengumuman) }}" alt="" width="100%" height="100%">
+        <img src="{{ asset('storage/' . $Pengumuman->gambar_pengumuman) }}" alt="" width="100%" height="100%">
       </div>
       <div class="col-md-8">
         <div class="card-body">
