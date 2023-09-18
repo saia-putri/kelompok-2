@@ -14,10 +14,12 @@ class Pengunjungcontroller extends Controller
      */
     public function index()
     {
+        
+
         $artikels = Artikel::all();
-        return view('pengunjung.index', compact('artikels'));
-        $Pengumuman = Pengumuman::find($id);
-        return view('admin.editpengumuman', compact('Pengumuman'));
+        $pengumumen = Pengumuman::all();
+
+        return view ('pengunjung.index', compact('artikels', 'pengumumen'));
     }
 
     /**

@@ -22,8 +22,8 @@
     <tr>
       <th scope="row">{{ $loop->iteration }}</th>
       <td>{{$Pengumuman->judul_pengumuman}}</td>
-      <td>{{$Pengumuman->isi_pengumuman}}</td>
-      <td><img src="{{ asset('storage/' . $Pengumuman->gambar_pengumuman) }}" alt="" width="100"></td>
+      <td  width="40%">{{$Pengumuman->isi_pengumuman}}</td>
+      <td><img src="{{ asset('storage/' . $Pengumuman->gambar_pengumuman) }}" alt="" width="155"></td>
       <td>
         <a href="/editpengumuman/{{ $Pengumuman->id }}" class="btn bg-btn">edit</a>
         <a href="/deletepengumuman/{{ $Pengumuman->id }}" class="btn bg-btn">delete</a>

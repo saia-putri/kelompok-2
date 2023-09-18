@@ -10,31 +10,28 @@
     <div class="col-md-6">
       <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"> 
         <div class="col p-4 d-flex flex-column position-static">
-        <h3 class="card-title">{{ $Artikel->judul_artikel }}</h3>
+          <h3 class="card-title">{{ $Artikel->judul_artikel }}</h3>
+        <div class="col-auto d-none d-lg-block mt-3 mb-3">
+          <img src="{{ asset('storage/' . $Artikel->gambar_artikel)}}" alt="" width="100%">
+        </div>
           <p class="card-text mb-auto">{{ $Artikel->isi_artikel }}</p>
-          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
-            Continue reading
-          </a>
         </div>
-        <div class="col-auto d-none d-lg-block">
-          <img src="{{ asset('storage/' . $Artikel->gambar_artikel)}}" alt="" width="250" height="250">
-        </div>
+        
       </div>
     </div>
 
     <div class="col-md-6">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"> 
         <div class="col p-4 d-flex flex-column position-static">
-          <h3 class="mb-0">{{ $Artikel->judul_artikel }}</h3>
-          <p class="mb-auto">{{ $Artikel->isi_artikel }}</p>
-          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
-          Continue reading
-          </a>
+          <h3 class="card-title">{{ $Artikel->judul_artikel }}</h3>
+        <div class="col-auto d-none d-lg-block mt-3 mb-3">
+          <img src="{{ asset('storage/' . $Artikel->gambar_artikel)}}" alt="" width="100%">
         </div>
-        <div class="col-auto d-none d-lg-block">
-          <img src="{{ asset('storage/' . $Artikel->gambar_artikel)}}" alt="" width="250" height="250">
+          <p class="card-text mb-auto">{{ $Artikel->isi_artikel }}</p>
         </div>
+        
       </div>
+    </div>
 
      </div>
     </div>

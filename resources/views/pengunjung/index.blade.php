@@ -45,36 +45,36 @@
   @endforeach
  <!-- card artikel2 -->
 @foreach ($pengumumen as $Pengumuman)
-<div class="font mb-2 mt-4">
+<div class="font mb-3 mt-4">
     <h2>Pengumuman</h2>
 </div>
-<div class="card" style="max-width: 100%; height: 250px;">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img src="{{ asset('storage/' . $Pengumuman->gambar_pengumuman) }}" alt="" width="100%" height="100%">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h3 class="card-title">{{$Pengumuman->judul_pengumuman}}</h3>
-        <p class="card-text">{{$Pengumuman->isi_pengumuman}}</p>
+<div class="card mb-5" style="max-width: 100%;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="{{ asset('storage/' . $Pengumuman->gambar_pengumuman) }}" alt="" width="80%">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h3 class="card-title">{{$Pengumuman->judul_pengumuman}}</h3>
+          <p class="card-text">{{$Pengumuman->isi_pengumuman}}</p>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="card mb-5 mt-3" style="max-width: 100%; height: 250px;">
-  <div class="row g-0">
-    <div class="col-md-8">
-      <div class="card-body">
-        <h3 class="card-title">{{$Pengumuman->judul_pengumuman}}</h3>
-        <p class="card-text">{{$Pengumuman->isi_pengumuman}}</p>
+<div class="card mt-5 mb-5" style="max-width: 100%;">
+    <div class="row g-0">
+      <div class="col-md-8">
+        <div class="card-body">
+          <h3 class="card-title">{{$Pengumuman->judul_pengumuman}}</h3>
+          <p class="card-text">{{$Pengumuman->isi_pengumuman}}</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <img src="{{ asset('storage/' . $Pengumuman->gambar_pengumuman) }}" alt="" width="80%">
       </div>
     </div>
-    <div class="col-md-4">
-      <img src="{{ asset('storage/' . $Pengumuman->gambar_pengumuman) }}" alt="" width="100%" height="100%">
-    </div>
   </div>
-</div>
 @endforeach
   <!-- Berita -->
 <!-- <div class="font mb-2 mt-5">

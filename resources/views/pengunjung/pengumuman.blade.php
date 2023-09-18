@@ -9,7 +9,7 @@
   <div class="card mt-5 mb-5" style="max-width: 100%;">
     <div class="row g-0">
       <div class="col-md-4">
-        <img src="{{ asset('storage/' . $Pengumuman->gambar_pengumuman) }}" alt="" width="100%" height="100%">
+        <img src="{{ asset('storage/' . $Pengumuman->gambar_pengumuman) }}" alt="" width="80%">
       </div>
       <div class="col-md-8">
         <div class="card-body">
@@ -29,7 +29,7 @@
         </div>
       </div>
       <div class="col-md-4">
-        <img src="{{ asset('storage/' . $Pengumuman->gambar_pengumuman) }}" alt="" width="100%" height="100%">
+        <img src="{{ asset('storage/' . $Pengumuman->gambar_pengumuman) }}" alt="" width="80%">
       </div>
     </div>
   </div>
