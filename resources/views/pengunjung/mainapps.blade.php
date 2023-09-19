@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Space+Grotesk:wght@600&display=swap" rel="stylesheet">
   </head>
-  
+
   <body>
     <!-- ini navbar1 -->
     <header class="py-3 mb-4 border-bottom">
@@ -39,8 +39,7 @@
         <li class="nav-item"><a href="/about" class="nav-link link-body-emphasis px-2">About</a></li>
       </ul>
       <ul class="nav">
-        <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Login</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Sign up</a></li>
+        <li class="nav-item"><a href="/login" class="nav-link link-body-emphasis px-2">Login</a></li>
       </ul>
     </div>
     </nav>
@@ -75,7 +74,7 @@
       <span class="visually-hidden">Next</span>
     </button>
 </div>
-  
+
      <!-- ini konten -->
      @yield('content')
 

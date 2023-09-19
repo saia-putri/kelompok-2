@@ -8,7 +8,7 @@
 
 <table class="table">
   <thead>
-  <a href="/createpengumuman" class="btn bg-btn mb-2">Tambahkan Pengumuman</a>
+  <a href="{{ route('register') }}" class="btn bg-btn mb-2">Tambahkan Users</a>
     <tr>
       <th scope="col">No</th>
       <th scope="col">First</th>
@@ -18,7 +18,7 @@
     </tr>
   </thead>
   <tbody>
-  @foreach ($pengumumen as $Pengumuman)
+  {{-- @foreach ($pengumumen as $Pengumuman)
     <tr>
       <th scope="row">{{ $loop->iteration }}</th>
       <td>{{$Pengumuman->judul_pengumuman}}</td>
@@ -30,7 +30,7 @@
         <a href="/" class="btn bg-btn">detail</a>
       </td>
     </tr>
-  @endforeach
+  @endforeach --}}
   </tbody>
 </table>
 

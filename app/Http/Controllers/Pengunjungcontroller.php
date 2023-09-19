@@ -1,9 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Pengumuman;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Illuminate\Support\Facades\Storage;
 
 class Pengunjungcontroller extends Controller
 {
@@ -28,7 +29,8 @@ class Pengunjungcontroller extends Controller
      */
     public function pengumuman()
     {
-        return view('pengunjung.pengumuman');
+        $pengumumen = Pengumuman::all();
+        return view('pengunjung.pengumuman', compact('pengumumen'));
     }
 
     /**
