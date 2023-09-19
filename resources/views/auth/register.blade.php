@@ -1,19 +1,35 @@
 @extends('admin.mainapps')
 
 @section('content')
-    <div class="container py-4">
+    <div class="container py-5">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">{{ __('Register') }}</div>
-
+                    <div class="card-header">Form Tambah User</div>
                     <div class="card-body">
-                        <form method="POST" action="{{ route('register') }}">
+                        <form method="POST" action="{{ route('register') }}" enctype="multipart/form-data">
                             @csrf
 
-                            <div class="row mb-3">
-                                <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Name') }}</label>
+                            {{-- <div class="row mb-3">
+                                <label for="gambar"
+                                    class="col-md-4 col-form-label text-md-end">{{ __('Gambar') }}</label>
 
+                                <div class="col-md-6">
+                                    <input id="gambar" type="file"
+                                        class="form-control @error('gambar') is-invalid @enderror" name="gambar"
+                                        value="{{ old('gambar') }}" required autocomplete="gambar" autofocus>
+
+                                    @error('gambar')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                </div>
+                            </div> --}}
+
+                            <div class="row mb-3">
+                                <label for="name"
+                                    class="col-md-4 col-form-label text-md-end">{{ __('Name') }}</label>
                                 <div class="col-md-6">
                                     <input id="name" type="text"
                                         class="form-control @error('name') is-invalid @enderror" name="name"
@@ -37,23 +53,6 @@
                                         value="{{ old('jabatan') }}" required autocomplete="jabatan" autofocus>
 
                                     @error('jabatan')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                    @enderror
-                                </div>
-                            </div>
-
-                            <div class="row mb-3">
-                                <label for="gambar"
-                                    class="col-md-4 col-form-label text-md-end">{{ __('Gambar') }}</label>
-
-                                <div class="col-md-6">
-                                    <input id="gambar" type="text"
-                                        class="form-control @error('gambar') is-invalid @enderror" name="gambar"
-                                        value="{{ old('gambar') }}" required autocomplete="gambar" autofocus>
-
-                                    @error('gambar')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
