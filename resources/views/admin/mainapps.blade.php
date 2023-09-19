@@ -31,7 +31,7 @@
     <nav class="py-2 bg-body-tertiary border-bottom sticky-top pct2">
         <div class="container d-flex flex-wrap">
             <ul class="nav me-auto">
-                <li class="nav-item"><a href="/index" class="nav-link link-body-emphasis px-2 active"
+                <li class="nav-item"><a href="/home" class="nav-link link-body-emphasis px-2 active"
                         aria-current="page">Beranda</a></li>
                 <li class="nav-item"><a href="/dataartikel" class="nav-link link-body-emphasis px-2">Artikel</a></li>
                 <li class="nav-item"><a href="/datapengumuman" class="nav-link link-body-emphasis px-2">Pengumuman</a>
