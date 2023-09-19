@@ -113,67 +113,6 @@
                     </div>
                 </div>
             @endforeach
-            <!-- Berita -->
-            <!-- <div class="font mb-2 mt-5">
-              <h2>Berita</h2>
-            </div> -->
-            <div class="row row-cols-1 row-cols-md-4 g-3">
-                <div class="col">
-                    <div class="card h-100">
-                        <div class="col-auto d-none d-lg-block">
-                            <img src="img/1tahun.jpg" alt="" width="100%" height="250">
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit,
-                                rerum?</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-body-secondary">Last updated 3 mins ago</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <div class="col-auto d-none d-lg-block">
-                            <img src="img/1tahun.jpg" alt="" width="100%" height="250">
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
-                                tempore!</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-body-secondary">Last updated 3 mins ago</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <div class="col-auto d-none d-lg-block">
-                            <img src="img/1tahun.jpg" alt="" width="100%" height="250">
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
-                                content.</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-body-secondary">Last updated 3 mins ago</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <div class="col-auto d-none d-lg-block">
-                            <img src="img/1tahun.jpg" alt="" width="100%" height="250">
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, ipsum!</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-body-secondary">Last updated 3 mins ago</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             <!-- video -->
             <div class="vid mb-2 mt-5">
