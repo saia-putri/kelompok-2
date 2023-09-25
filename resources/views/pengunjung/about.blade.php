@@ -11,8 +11,8 @@
 <div class="row row-cols-1 row-cols-md-3 g-3 mb-5">
   <div class="col">
     <div class="card h-100">
-        <div class="col-auto d-none d-lg-block">
-          <svg class="bd-placeholder-img" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/></svg>
+        <div class="col-auto d-none d-lg-block py-2">
+          <img src="img/symbol.png" alt="" width="50%">
         </div>
       <div class="card-body">
         <h4>Ferlian Satria, S.sos</h4><hr>
@@ -22,8 +22,8 @@
   </div>
   <div class="col">
     <div class="card h-100">
-        <div class="col-auto d-none d-lg-block">
-          <svg class="bd-placeholder-img" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/></svg>
+        <div class="col-auto d-none d-lg-block py-2">
+          <img src="img/symbol.png" alt="" width="50%">
         </div>
       <div class="card-body">
         <h4>Rudi Hartono, S.kom</h4><hr>
@@ -33,8 +33,8 @@
   </div>
   <div class="col">
     <div class="card h-100">
-        <div class="col-auto d-none d-lg-block">
-          <svg class="bd-placeholder-img" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/></svg>
+        <div class="col-auto d-none d-lg-block py-2">
+          <img src="img/symbol.png" alt="" width="50%">
         </div>
       <div class="card-body">
         <h4>Fitri Nur Aprianingsih, S.kom</h4><hr>
@@ -46,8 +46,8 @@
 <div class="row row-cols-1 row-cols-md-3 g-3">
   <div class="col">
     <div class="card h-100">
-       <div class="col-auto d-none d-lg-block">
-          <svg class="bd-placeholder-img" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/></svg>
+        <div class="col-auto d-none d-lg-block py-2">
+          <img src="img/symbol.png" alt="" width="50%">
         </div>
         <div class="card-body">
           <h4>Aan Saputra,S.kom</h4><hr>
@@ -57,8 +57,8 @@
   </div>
   <div class="col">
     <div class="card h-100">
-       <div class="col-auto d-none d-lg-block">
-          <svg class="bd-placeholder-img" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/></svg>
+        <div class="col-auto d-none d-lg-block py-2">
+          <img src="img/symbol.png" alt="" width="50%">
         </div>
         <div class="card-body">
           <h4>Muhammad Zaki Muharam, S.kom</h4><hr>
@@ -68,8 +68,8 @@
   </div>
   <div class="col">
     <div class="card h-100">
-       <div class="col-auto d-none d-lg-block">
-          <svg class="bd-placeholder-img" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/></svg>
+        <div class="col-auto d-none d-lg-block py-2">
+          <img src="img/symbol.png" alt="" width="50%">
         </div>
         <div class="card-body">
           <h4>Dian Eva Lestari, M.pd</h4><hr>

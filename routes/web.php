@@ -27,7 +27,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/artikel', [Pengunjungcontroller::class, 'artikel']);
 Route::get('/pengumuman', [Pengunjungcontroller::class, 'pengumuman']);
 Route::get('/about', [Pengunjungcontroller::class, 'about']);
-Route::get('/detailartikel', [Pengunjungcontroller::class, 'detailartikel']);
+Route::get('/detailartikelpengunjung', [Pengunjungcontroller::class, 'detailartikelpengunjung']);
 
 Route::get('/dataartikel', [Artikelcontroller::class, 'index']);
 Route::get('/createartikel', [Artikelcontroller::class, 'create']);
@@ -35,7 +35,7 @@ Route::get('/editartikel/{id}', [Artikelcontroller::class, 'edit']);
 Route::post('/saveartikel', [Artikelcontroller::class, 'store']);
 Route::put('/updateartikel/{id}', [Artikelcontroller::class, 'update']);
 Route::get('/deleteartikel/{id}', [Artikelcontroller::class, 'destroy']);
-Route::get('/detailartikel', [Artikelcontroller::class, 'show']);
+Route::get('/detailartikeladmin', [Artikelcontroller::class, 'show']);
 
 Route::get('/datapengumuman', [Pengumumancontroller::class, 'index']);
 Route::get('/createpengumuman', [Pengumumancontroller::class, 'create']);

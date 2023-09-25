@@ -29,6 +29,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
+    protected $redirectTo = RouteServiceProvider::HOME;
 
     /**
      * Create a new controller instance.
@@ -53,8 +54,6 @@ class RegisterController extends Controller
             'jabatan' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
-            // 'gambar' => ['mimes:png,jpg,gif|image|max:5048'],
-
         ]);
     }
 

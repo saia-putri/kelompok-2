@@ -39,16 +39,13 @@
             <!-- card artikel1 -->
             @foreach ($artikels as $Artikel)
                 <div class="row mb-2 mt-5">
-                    <div class="font">
-                        <h2>Artikel</h2>
-                    </div>
                     <div class="col-md-6">
                         <div
                             class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                             <div class="col p-4 d-flex flex-column position-static">
                                 <h3 class="mb-0">{{ $Artikel->judul_artikel }}</h3>
                                 <p class="card-text mb-auto">{{ $Artikel->isi_artikel }}</p>
-                                <a href="/detailartikel" class="icon-link gap-1 icon-link-hover stretched-link">
+                                <a href="/detailartikelpengunjung" class="icon-link gap-1 icon-link-hover stretched-link">
                                     Continue reading
                                 </a>
                             </div>
@@ -65,7 +62,7 @@
                             <div class="col p-4 d-flex flex-column position-static">
                                 <h3 class="mb-0">{{ $Artikel->judul_artikel }}</h3>
                                 <p class="mb-auto">{{ $Artikel->isi_artikel }}</p>
-                                <a href="/detailartikel" class="icon-link gap-1 icon-link-hover stretched-link">
+                                <a href="/detailartikelpengunjung" class="icon-link gap-1 icon-link-hover stretched-link">
                                     Continue reading
                                 </a>
                             </div>
@@ -80,9 +77,6 @@
             @endforeach
             <!-- card artikel2 -->
             @foreach ($pengumumen as $Pengumuman)
-                <div class="font mb-3 mt-4">
-                    <h2>Pengumuman</h2>
-                </div>
                 <div class="card mb-5" style="max-width: 100%;">
                     <div class="row g-0">
                         <div class="col-md-4">

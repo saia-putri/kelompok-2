@@ -27,7 +27,7 @@
       <td>
         <a href="/editartikel/{{ $Artikel->id }}" class="btn bg-btn">edit</a>
         <a href="/deleteartikel/{{ $Artikel->id }}" class="btn bg-btn">delete</a>
-        <a href="/detailartikel" class="btn bg-btn">detail</a>
+        <a href="/detailartikeladmin" class="btn bg-btn">detail</a>
       </td>
     </tr>
     @endforeach

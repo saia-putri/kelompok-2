@@ -14,8 +14,6 @@ class Pengunjungcontroller extends Controller
      */
     public function index()
     {
-        
-
         $artikels = Artikel::all();
         $pengumumen = Pengumuman::all();
 
@@ -52,8 +50,9 @@ class Pengunjungcontroller extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function detailartikel()
+    public function detailartikelpengunjung()
     {
-        return view('pengunjung.detailartikel');
+        $artikels = Artikel::all();
+        return view('pengunjung.detailartikelpengunjung', compact('artikels'));
     }
 }
